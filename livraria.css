@@ -5,3 +5,38 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
+/* Estilizar a seção do cabeçalho */
+header {
+    background-color: #dc70fd;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilizar o logotipo */
+header img {
+    margin-left: 20px;
+}
+
+/* Estilizar o formulário de pesquisa */
+.search-form {
+    margin-right: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #bf00f9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
