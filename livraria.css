@@ -40,3 +40,42 @@ header img {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Estilizar o menu de navegação */
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilizar o menu suspenso */
+.menu .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #bf00f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu .services:hover .dropdown {
+    display: block;
+}
+
+.menu .dropdown li {
+    margin: 10px 2;
+}
+
+/* Aplicar estilos aos links ao passar o mouse */
+.menu a:hover {
+    color: #a40bd2;
+}
