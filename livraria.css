@@ -79,3 +79,57 @@ header img {
 .menu a:hover {
     color: #a40bd2;
 }
+
+*{
+    margin: 0%;
+    padding: 0;
+    
+}
+
+#título{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-left: 33%;
+    margin-top: 2%;
+
+}
+#sub{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+fieldset{
+    border: 0;
+}
+
+
+input, button{
+    border-radius: 2px;
+    justify-content: baseline;
+}
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: black;
+    
+    display: block;
+  }
+  .campo input [type="text"], .campo input[type="email"], .campo input[type="password"], .campo input[type="date"], .campo input[type="radio"]{
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+
+    display: block;
+}
+.campo input:focus{
+    background-color: white;
+}
+fieldset.grupo{
+    float: left;
+    margin-right: 1em;
+    margin-left: 33%;
+    margin-top: 2%;
+}

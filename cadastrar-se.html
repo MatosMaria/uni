@@ -7,20 +7,42 @@
     <title>Universo Literário: Livraria</title>
 </head>
 <body>
-    <form>
-        <label for="fname">Nome:</label><br>
-        <input type="text" id="fname" name="fname" size="50px" value=" "><br><br>
-        <label for="lname">Email:</label><br>
-        <input type="text" id="lname" name="lname" size="50px" value=" "><br><br>
-        <label for="lsenha">Senha:</label><br>
-        <input type="password" id="lsenha" name="lsenha"><br><br>
-            <label for="birthday">Data de nascimento:</label><br><br>
-            <input type="date" id="birthday" name="birthday">
-            <input type="submit" value="Submit"><br><br>
-            <input type="submit" value="Cadastrar">
-        <input type="reset">
-
-      </form>
-      
+    <div>
+        <h1 id="título">Cadasto de Usuário.</h1><br>
+        <p id="sub">Crie sua conta:</p>   
+        <br> 
+     </div> 
+     <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="fname" name="fname" size="50px" value=" " required><br><br>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="@.com" id="email" name="email" size="50px" value=" " required><br><br> 
+            </div>
+            <div class="campo">
+                <label for="lsenha">Senha:</label><br>
+                <input type="password" id="lsenha" name="lsenha" required><br><br>
+            </div>
+            <div class="campo">
+                <label for="birthday">Data de nascimento:</label><br>
+                <input type="date" id="birthday" name="birthday"><br>
+            </div>
+            <div class="campo">
+                <label>Qual tipo de Usuário você é:</label><br><br>
+                <label>
+                    <input type="radio" name="Revendedor" value="frontend" required>Revendedor
+                </label><br>
+                <label>
+                    <input type="radio" name="Revendedor" value="backend" required>Pessoa Fisica
+                </label><br>
+            </div>
+            <button type="submit">Enviar</button><br><br>
+            <button type="submit">Voltar</button><br>
+        </fieldset><br>
+    
+      </form>  
 </body>
 </html>
