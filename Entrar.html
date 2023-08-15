@@ -2,16 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="livraria.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo Literário</title>
 </head>
 <body>
-    <form>
-        <label for="fname">Nome:</label><br>
-        <input type="text" id="fname" name="fname" value=" "><br>
-        <label for="lname">Email:</label><br>
-        <input type="text" id="lname" name="lname" value=" ">
-      </form>
+    <body>
+        <div>
+            <h1 id="Título">Entrar:</h1><br>   
+            <br> 
+         </div> 
+         <form>
+            <fieldset class="Grupo">
+                <div class="Campo">
+                    <label for="fname">Nome:</label><br>
+                    <input type="text" id="fname" name="fname" size="50px" value=" " required><br><br>
+                </div>
+                <div class="Campo">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="@.com" id="email" name="email" size="50px" value=" " required><br><br> 
+                </div>
+                <div class="Campo">
+                    <label for="lsenha">Senha:</label><br>
+                    <input type="password" id="lsenha" name="lsenha" required><br><br>
+                </div>
+                <div class="Campo">
+                    <label>Qual tipo de Usuário você é:</label><br><br>
+                    <label>
+                        <input type="radio" name="Revendedor" value="frontend" required>Revendedor
+                    </label><br>
+                    <label>
+                        <input type="radio" name="Revendedor" value="backend" required>Pessoa Fisica
+                    </label><br>
+                </div>
+                <button type="submit">Entrar</button><br><br>
+                <button type="submit">Voltar</button><br>
+            </fieldset><br>
+        
+          </form>  
       
 </body>
 </html>

@@ -143,4 +143,55 @@ footer {
         text-align: center;
         line-height: 20px;
 }
+
+/*Parte de entrar*/
+
+#Título{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-left: 33%;
+    margin-top: 2%;
+    
+}
+#Sub{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+fieldset{
+    border: 0;
+}
+
+
+input, button{
+    border-radius: 2px;
+    justify-content: baseline;
+}
+.Campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: black;
+    
+    display: block;
+  }
+  .Campo input [type="text"], .Campo input[type="email"], .Campo input[type="password"], .Campo input[type="radio"]{
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+
+    display: block;
+}
+.Campo input:focus{
+    background-color: white;
+}
+fieldset.Grupo{
+    float: left;
+    margin-right: 1em;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+
     
