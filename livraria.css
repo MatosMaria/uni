@@ -80,6 +80,7 @@ header img {
     color: #a40bd2;
 }
 
+/*Parte do cadastrar-se*/
 *{
     margin: 0%;
     padding: 0;
@@ -133,6 +134,8 @@ fieldset.grupo{
     margin-left: 33%;
     margin-top: 2%;
 }
+
+/*Parte do rodapé*/
 footer {
         position: absolute;
         bottom: 0;
