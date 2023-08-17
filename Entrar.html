@@ -2,47 +2,38 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="livraria.css">
+    <link rel="stylesheet" type="text/css" href="CadastroEntrar.css">
     <link rel="icon" type="image/x-icon" href="2.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
 </head>
 <body>
-    <body>
-        <div>
-            <h1 id="Título">Entrar:</h1><br>   
-            <br> 
-         </div> 
-         <form>
-            <fieldset class="Grupo">
-                <div class="Campo">
-                    <label for="fname">Nome:</label><br>
-                    <input type="text" id="fname" name="fname" size="40px" value=" " required><br><br>
-                </div>
-                <div class="Campo">
-                    <label for="email">Email:</label><br>
-                    <input type="email" placeholder="@.com" id="email" name="email" size="40px" value=" " required><br><br> 
-                </div>
-                <div class="Campo">
-                    <label for="lsenha">Senha:</label><br>
-                    <input type="password" id="lsenha" name="lsenha" required><br><br>
-                </div>
-                <div class="Campo">
-                    <label>Qual tipo de Usuário você é:</label><br><br>
-                    <label>
-                        <input type="radio" name="Revendedor" value="frontend" required>Revendedor
-                    </label><br>
-                    <label>
-                        <input type="radio" name="Revendedor" value="backend" required>Pessoa Fisica
-                    </label><br>
-                </div>
-                <button type="submit">Entrar</button><br><br>
-                <button type="submit">Voltar</button><br>
-                <br>
-                <a href="cadastrar-se.html">Cadastre-se em nossa loja</a>
-            </fieldset><br>
-        
-          </form>  
-      
+    <div class="box">  
+              <br>  
+        <form action="">
+            <fieldset>
+                <legend><b>Entrar</b></legend>
+                  <div class="campo">
+                      <label for="email" >Email:</label><br>
+                      <input type="email" placeholder="@.com" id="email" name="email" class= "inputUser" required><br><br> 
+                  </div>
+                  <div class="campo">
+                      <label for="lsenha">Senha:</label><br>
+                      <input type="password" id="lsenha" name="lsenha" class="inputUser" required><br><br>
+                  </div>
+                  <div class="campo">
+                      <p>Qual tipo de Usuário você é:</p>
+                      <input type="radio" name="Revendedor" value="frontend" required>
+                      <label for="frontend">Revendedor</label>
+                      <input type="radio" name="Revendedor" value="backend" required>
+                      <label for="backend">Pessoa Fisica</label><br><br> 
+                  </div>
+                  <button type="submit" id="Marca">Entrar</button><br><br>
+                  <button type="submit" id="Voltar">Voltar</button><br>
+                  <a href="cadastrar-se.html">Cadastre-se em nossa loja</a>
+              </fieldset><br>   
+          </form>
+      </div>
+   
 </body>
 </html>
