@@ -1,0 +1,56 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f8f8;
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(218, 214, 238, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+fieldset{
+    border: 3px solid black;
+}
+
+legend{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color:#f8f8f8;;
+    border-radius: 8px;
+}
+
+.campo{
+    position: relative;
+    display: block;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: black;
+    font-size: 11px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+#Marca{
+    width: 100%;
+    padding: 9px;
+    color: rgb(10, 8, 8);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#Voltar{
+    padding: 5px;
+    color: rgb(10, 8, 8);
+    cursor: pointer;
+    border-radius: 5px;
+}
