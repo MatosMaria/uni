@@ -8,42 +8,42 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div>
-        <h1 id="título">Cadasto de Usuário.</h1><br>
-        <p id="sub">Crie sua conta:</p>   
-        <br> 
-     </div> 
-     <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="fname">Nome:</label><br>
-                <input type="text" id="fname" name="fname" size="40px" value=" " required><br><br>
-            </div>
-            <div class="campo">
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="@.com" id="email" name="email" size="40px" value=" " required><br><br> 
-            </div>
-            <div class="campo">
-                <label for="lsenha">Senha:</label><br>
-                <input type="password" id="lsenha" name="lsenha" required><br><br>
-            </div>
-            <div class="campo">
-                <label for="birthday">Data de nascimento:</label><br>
-                <input type="date" id="birthday" name="birthday"><br>
-            </div>
-            <div class="campo">
-                <label>Qual tipo de Usuário você é:</label><br><br>
-                <label>
-                    <input type="radio" name="Revendedor" value="frontend" required>Revendedor
-                </label><br>
-                <label>
-                    <input type="radio" name="Revendedor" value="backend" required>Pessoa Fisica
-                </label><br>
-            </div>
-            <button type="submit">Enviar</button><br><br>
-            <button type="submit">Voltar</button><br>
-        </fieldset><br>
+    <head>
+
+        <div class="box">  
+          <br>  
+       <form action="">
+          <fieldset>
+              <legend><b>Cadasto do Usuário</b></legend>
+              <div class="campo">
+                  <label for="fname" class="Mala">Nome:</label><br>
+                  <input type="text" id="fname" name="fname" class="inputUser " required><br><br>
+              </div>
+              <div class="campo">
+                  <label for="email" >Email:</label><br>
+                  <input type="email" placeholder="@.com" id="email" name="email" class= "inputUser" required><br><br> 
+              </div>
+              <div class="campo">
+                  <label for="lsenha">Senha:</label><br>
+                  <input type="password" id="lsenha" name="lsenha" class="inputUser" required><br><br>
+              </div>
+              <div class="campo">
+                  <label for="birthday">Data de nascimento:</label><br>
+                  <input type="date" id="birthday" name="birthday"><br>
+              </div>
+              <div class="campo">
+                  <p>Qual tipo de Usuário você é:</p>
+                  <input type="radio" name="Revendedor" value="frontend" required>
+                  <label for="frontend">Revendedor</label>
+                  <input type="radio" name="Revendedor" value="backend" required>
+                  <label for="backend">Pessoa Fisica</label><br><br> 
+              </div>
+              <button type="submit" id="Marca">Entrar</button><br><br>
+              <button type="submit" id="Voltar">Voltar</button><br>
+          </fieldset><br>   
+      </form>
+  </div>
+      </head> 
     
-      </form>  
 </body>
 </html>
