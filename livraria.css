@@ -158,3 +158,36 @@ fieldset.Grupo{
     text-align: center;
     line-height: 20px;
 }
+.Falta{
+
+    text-align: center;
+    margin-top: 10px;
+
+    
+}
+.descrição{
+    justify-content: center;
+    text-align: justify;
+    margin: 2% 2% 2%;
+    padding: 5%;
+    display: block;
+
+}
+
+.Facha{
+    justify-content: baseline;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0.02%;
+    
+}
+
+.marca{
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  
+    background-color: white;  
+    border-radius: 5px;  
+}
