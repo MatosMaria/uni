@@ -1,5 +1,5 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f8f8;
 }
 
@@ -40,17 +40,25 @@ legend{
     letter-spacing: 2px;
 }
 #Marca{
-    width: 100%;
-    padding: 9px;
-    color: rgb(10, 8, 8);
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
+        color: black;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;  
+        background-color: white;  
+        border-radius: 5px;  
 }
+
+
 
 #Voltar{
     padding: 5px;
     color: rgb(10, 8, 8);
     cursor: pointer;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white; 
+    display: inline-block;  
+    
 }
