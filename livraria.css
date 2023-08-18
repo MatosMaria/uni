@@ -167,3 +167,14 @@ fieldset.Grupo{
       
         
 }
+
+.rodape {
+    position: relative;
+    bottom: 0;
+    background-color: #dc70fd;
+    color: black;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 20px;
+}
