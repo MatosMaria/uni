@@ -81,26 +81,6 @@ header img {
 }
 
 
-/*Parte de entrar*/
-
-#Título{
-   
-    color: black;
-    margin-left: 33%;
-    margin-top: 2%;
-    
-}
-#Sub{
-    
-    color: black;
-    margin-left: 33%;
-    margin-top: 2%;
-}
-fieldset{
-    border: 0;
-}
-
-
 input, button{
     border-radius: 2px;
     justify-content: baseline;
