@@ -143,9 +143,12 @@ fieldset.Grupo{
         margin-left: auto;
         margin-right: auto;
         width: 23%;
-        text-align: center;
-      
-        
+        text-align: center;  
+}
+
+.imagens img:hover{
+    transform: scale(0.9) translateY(5px);
+    transition: 1s;
 }
 
 .rodape {
