@@ -16,7 +16,7 @@
               <legend><b>Cadasto do Usuário</b></legend>
               <div class="campo">
                   <label for="fname" class="Mala">Nome:</label><br>
-                  <input type="text" id="fname" name="fname" class="inputUser " required><br><br>
+                  <input type="text" id="fname" name="fname" class="inputUser " onkeyup="Maiusculo();" required><br><br>
               </div>
               <div class="campo">
                   <label for="email" >Email:</label><br>
@@ -37,10 +37,29 @@
                   <input type="radio" name="Revendedor" value="backend" required>
                   <label for="backend">Pessoa Fisica</label><br><br> 
               </div>
-              <button type="submit" id="Marca" href="">Entrar</button><br><br>
-              <a href="Livraria.html" id="Voltar">Voltar</a><br>
+              <button type="submit" id="Marca" onmouseover="mouseOver();" onmouseout="mouseOut();" href="">Entrar</button><br><br>
+              <a href="Livraria.html" id="Voltar" onmouseover="mouseOver2();" onmouseout="mouseOut2();">Voltar</a><br>
           </fieldset><br>   
       </form>
   </div>
+    <script>
+    function mouseOver() {
+        document.getElementById("Marca").style.color = "green";
+    }
+    function mouseOver2() {
+        document.getElementById("Voltar").style.color = "red";
+    }
+    function mouseOut() {
+        document.getElementById("Marca").style.color = "black";
+    }
+    function mouseOut2() {
+        document.getElementById("Voltar").style.color = "black";
+    }
+    function Maiusculo() {
+        let mai = document.getElementById("fname");
+        mai.value = mai.value.toUpperCase();
+    }
+    
+  </script>
 </body>
 </html>
