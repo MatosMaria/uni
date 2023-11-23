@@ -28,11 +28,25 @@
                       <input type="radio" name="Revendedor" value="backend" required>
                       <label for="backend">Pessoa Fisica</label><br><br> 
                   </div>
-                  <a href="Livraria.html" id="Marca" target="_blank" >Entrar</a><br><br>
-                  <a href="Livraria.html" id="Voltar">Voltar</a><br><br>
+                  <a href="Livraria.html" id="Marca" target="_blank" onmouseover="mouseOver();" onmouseout="mouseOut();">Entrar</a><br><br>
+                  <a href="Livraria.html" id="Voltar" onmouseover="mouseOver2();" onmouseout="mouseOut2();">Voltar</a><br><br>
                   <a href="cadastrar-se.html">Cadastre-se em nossa loja</a><br>
               </fieldset><br> 
           </form>
-      </div>  
+      </div>
+        <script>
+        function mouseOver() {
+            document.getElementById("Marca").style.color = "green";
+        }
+        function mouseOver2() {
+            document.getElementById("Voltar").style.color = "red";
+        }
+        function mouseOut() {
+            document.getElementById("Marca").style.color = "black";
+        }
+        function mouseOut2() {
+            document.getElementById("Voltar").style.color = "black";
+        }
+      </script>
 </body>
 </html>
