@@ -11,7 +11,7 @@
     
     <div class="box">  
           <br>  
-       <form action="">
+       <form action="Entrar.html" method="POST" onsubmit="return ValidarFormulario()">
           <fieldset>
               <legend><b>Cadasto do Usuário</b></legend>
               <div class="campo">
@@ -37,8 +37,8 @@
                   <input type="radio" name="Revendedor" value="backend" required>
                   <label for="backend">Pessoa Fisica</label><br><br> 
               </div>
-              <button type="submit" id="Marca" onmouseover="mouseOver();" onmouseout="mouseOut();" href="">Entrar</button><br><br>
-              <button type="submit" id="Voltar" href="LIvraria.html" target="_blank" onmouseover="mouseOver2();" onmouseout="mouseOut2();" onclick="onclick2();">Voltar</button><br><br>
+              <button type="submit" id="Marca" onmouseover="mouseOver();" onmouseout="mouseOut();" onclick="entrar();">Entrar</button><br><br>
+              <button type="submit" id="Voltar" href="LIvraria.html" target="_blank" onmouseover="mouseOver2();" onmouseout="mouseOut2();" onclick="voltar();">Voltar</button><br><br>
           </fieldset><br>   
       </form>
   </div>
@@ -58,6 +58,15 @@
     function Maiusculo() {
         let mai = document.getElementById("fname");
         mai.value = mai.value.toUpperCase();
+    }
+    function entrar(){
+        window.location.href = "Entrar.html";
+    }
+    function voltar(){
+        window.history.back();
+    }
+    function ValidarFormulario(){
+        return true;
     }
     
   </script>
