@@ -8,7 +8,7 @@ body{
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(218, 214, 238, 0.8);
+    background-color:  #bf00f9;
     padding: 15px;
     border-radius: 15px;
 }
