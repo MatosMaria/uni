@@ -70,3 +70,11 @@ legend{
  color: white;
  font-weight: bold;
 }
+.VV{
+     padding: 0px 5px;
+     font-size: 13.5px;
+     font-weight: bold;
+     border: none;
+     border-radius: 2.5%;
+     cursor: pointer; 
+ }
