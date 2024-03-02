@@ -213,3 +213,18 @@ fieldset.Grupo{
     background-color: white;  
     border-radius: 5px;  
 }
+
+.Marca1{
+    padding: 0px 5px;
+    background-color:#732d88;
+    font-size: 13.5px;
+    /*font-weight: bold;*/
+    color: white;
+    border: none;
+    border-radius: 2.5%;
+    cursor: pointer; 
+}
+
+.Para{
+    font-weight: bold;
+}
