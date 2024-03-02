@@ -228,3 +228,17 @@ fieldset.Grupo{
 .Para{
     font-weight: bold;
 }
+.conteudo{
+    display: flex; /* Define o layout como Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+.imagem{
+    flex-shrink: 0;
+    
+}
+.texto{
+    max-width: 60%;
+    text-align: justify;
+}
