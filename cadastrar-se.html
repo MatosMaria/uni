@@ -13,65 +13,84 @@
 <body>
     
     <div class="box">  
-          <br>  
-       <form action="Entrar.html" method="POST" onsubmit="return ValidarFormulario()">
-          <fieldset>
-              <legend><b>Cadasto do Usuário</b></legend>
-              <div class="campo">
-                  <label for="fname" class="Para1">Nome:</label><br>
-                  <input type="text" id="fname" name="fname" class="inputUser " onkeyup="Maiusculo();" required><br><br>
-              </div>
-              <div class="campo">
-                  <label for="email" class="Para1" >Email:</label><br>
-                  <input type="email" placeholder="@.com" id="email" name="email" class= "inputUser" required><br><br> 
-              </div>
-              <div class="campo">
-                  <label for="lsenha" class="Para1">Senha:</label><br>
-                  <input type="password" id="lsenha" name="lsenha" class="inputUser" required><br><br>
-              </div>
-              <div class="campo">
-                  <label for="birthday" class="Para1">Data de nascimento:</label><br>
-                  <input type="date" id="birthday" name="birthday"><br>
-              </div>
-              <div class="campo">
-                  <p class="Para1">Qual tipo de Usuário você é:</p>
-                  <input type="radio" name="Revendedor" value="frontend" required>
-                  <label for="frontend" class="Para1">Revendedor</label>
-                  <input type="radio" name="Revendedor" value="backend" required>
-                  <label for="backend" class="Para1">Pessoa Fisica</label><br><br> 
-              </div>
-              <button type="submit" id="Marca" class="VV" onmouseover="mouseOver();" onmouseout="mouseOut();" onclick="entrar();">Entrar</button><br><br>
-              <button type="submit" id="Voltar" class="VV" href="LIvraria.html" target="_blank" onmouseover="mouseOver2();" onmouseout="mouseOut2();" onclick="voltar();">Voltar</button><br><br>
-          </fieldset><br>   
-      </form>
-  </div>
+        <br>  
+        <form action="Entrar.html" method="POST" onsubmit="return ValidarFormulario()">
+            <fieldset>
+                <legend><b>Cadasto do Usuário</b></legend>
+            <div class="campo">
+                    <label for="fname" class="Para1">Nome:</label><br>
+                     <input type="text" id="fname" name="fname" class="inputUser" oninput="verificação();" onkeyup="Maiusculo();"required><br>
+                    <span id="nomeLimite" style="color: white;"></span><br> 
+            </div>
+            <div class="campo">
+                <label for="email" class="Para1" >Email:</label><br>
+                <input type="email" placeholder="@.com" id="email" name="email" class= "inputUser" required><br><br>
+            </div>
+                <div class="campo">
+                    <label for="lsenha" class="Para1">Senha:</label><br>
+                    <input type="password" id="lsenha" name="lsenha" class="inputUser" required><br><br>
+                </div>
+                <div class="campo">
+                    <label for="birthday" class="Para1">Data de nascimento:</label><br>
+                    <input type="date" id="birthday" name="birthday"><br>
+                </div>
+                <div class="campo">
+                    <p class="Para1">Qual tipo de Usuário você é:</p>
+                    <input type="radio" name="Revendedor" value="frontend" required>
+                    <label for="frontend" class="Para1">Revendedor</label>
+                    <input type="radio" name="Revendedor" value="backend" required>
+                    <label for="backend" class="Para1">Pessoa Fisica</label><br><br>
+                </div>
+                <button type="submit" id="Marca" class="VV" onmouseover="mouseOver();" onmouseout="mouseOut();" onclick="VerificarDados()">Entrar</button><br><br>
+                <button type="button" id="Voltar" class="VV" href="LIvraria.html" target="_blank" onmouseover="mouseOver2();" onmouseout="mouseOut2();" onclick="voltar();">Voltar</button><br><br>
+            </fieldset><br> 
+        </form>
+    </div>
     <script>
-    function mouseOver() {
-        document.getElementById("Marca").style.color = "green";
+        function mouseOver() {
+            document.getElementById("Marca").style.color = "green";
+        }
+        function mouseOver2() {
+            document.getElementById("Voltar").style.color = "red";
+        }
+        function mouseOut() {
+            document.getElementById("Marca").style.color = "black";
+        }
+        function mouseOut2() {
+            document.getElementById("Voltar").style.color = "black";
+        }
+        function Maiusculo() {
+            let mai = document.getElementById("fname");
+            mai.value = mai.value.toUpperCase();
+        }
+        function voltar(){
+            window.history.back();
+        }
+        function verificação() {
+            var nome = document.getElementById("fname").value;
+            var limite = 30;
+            if (nome.length > limite) { 
+                document.getElementById("nomeLimite").innerHTML = "O nome não pode ultrapassar <br>" + limite + " caracteres.";
+            } else {
+                document.getElementById("nomeLimite").innerHTML = "";
+            }
+        }
+        function VerificarDados(){
+            var nome = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("lsenha").value;
+            if(nome == "" || email == "" || senha == "") {
+                alert("O preenchimento de todos os campos são obrigatórios.");
+                return false;
+            }else{
+                window.location.href = "Entrar.html";
+            }
+        }
+        function ValidarFormulario(){
+            return true;
     }
-    function mouseOver2() {
-        document.getElementById("Voltar").style.color = "red";
-    }
-    function mouseOut() {
-        document.getElementById("Marca").style.color = "black";
-    }
-    function mouseOut2() {
-        document.getElementById("Voltar").style.color = "black";
-    }
-    function Maiusculo() {
-        let mai = document.getElementById("fname");
-        mai.value = mai.value.toUpperCase();
-    }
-    function entrar(){
-        window.location.href = "Entrar.html";
-    }
-    function voltar(){
-        window.history.back();
-    }
-    function ValidarFormulario(){
-        return true;
-    }
-    
-  </script>
+
+        
+    </script>
 </body>
 </html>
