@@ -240,3 +240,21 @@ fieldset.Grupo{
     padding: 25px;
     text-align: justify;
 }
+
+.Marca12{
+    padding: 5px 5px;
+    background-color:#732d88;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    color: white;
+    border: none;
+    border-radius: 2.5%;
+    cursor: pointer;
+
+}
+.px{
+    text-align: justify;
+    float: none;
+    font-size: 20px;
+}
+
