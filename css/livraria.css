@@ -175,7 +175,7 @@ footer {
   }
 
 
-  .imagens img {
+  #imagens img {
     width: 35px; 
     margin: 0 50px; 
     border-radius: 50%; 
